@@ -37,7 +37,7 @@ class MesajeController extends Controller
     {
        $serviciu=Mesaj::find($id);
        $serviciu->delete();
-       return redirect()-> route('mesaj.index')->with('success',"Mesajul a fost sters cu succes");
+       return redirect()-> route('mesaje.index')->with('success',"Mesajul a fost sters cu succes");
   
     }
    
